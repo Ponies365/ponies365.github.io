@@ -1,0 +1,49 @@
+//
+//
+// This script file is disabled
+// Use the one in the index.html footer instead
+//
+//
+
+//$(document).ready(Generate);
+$(window).on('load', function (e) { 
+	Generate();
+});
+
+// Generate HTML
+function Generate() {
+	
+	// Generate Gallery List HTML
+	var list = document.getElementById("gallery");
+	var html = "";
+
+	for (var i = 0; i < gallery.length; i++) {
+	    html += 
+	    '<div class=\"grid-item\">' + 
+	    	'<div class=\"icon\">' +
+	    		'<a href=\"#' + gallery[i][0].replace(' ', '-') + '\" target=\"_blank\">' + 
+	    			'<img src=\"img/gallery/' + gallery[i][1] +'\">' + 
+    			'</a>' +
+	    	'</div>' +
+	    	'<div class=\"title\">' +
+	    		 gallery[i][0] +
+	    	'</div>' +
+	    '</div>';
+	}
+
+	list.innerHTML = html;
+}
+
+// Lists
+function Lists(list) {
+	var html = '';
+
+	for (var i = 0; i < list.length; i++) {
+		html += 
+		'<li>' + 
+			'<a href=\"' + list[i][1] + '\" target=\"_blank\">' + list[i][0] + '</a>' + 
+		'</li>';
+	}
+
+	return html;
+}
