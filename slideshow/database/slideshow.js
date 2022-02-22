@@ -21,7 +21,7 @@ var slideshow =
 	[	/* Title */		"01",
 		/* Image */		"01.jpg",
 		/* Position */		"9",
-		/* Link */		"https://www.etsy.com"
+		/* Link */		"https://ponies365.github.io"
 	],
 
 	// ----------------------------------------
@@ -30,6 +30,15 @@ var slideshow =
 		/* Title */		"02",
 		/* Image */		"02.jpg",
 		/* Position */	"15",
-		/* Link */		"https://www.etsy.com"
+		/* Link */		"https://ponies365.github.io"
+	],
+
+	// ----------------------------------------
+
+	[	
+		/* Title */		"03",
+		/* Image */		"03.jpg",
+		/* Position */	"10",
+		/* Link */		"https://ponies365.github.io"
 	],
 ];
