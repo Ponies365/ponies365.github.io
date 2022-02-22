@@ -30,7 +30,7 @@ body {
 }
 
 a {
-  color: #9a53fc; /*b5babf*/
+  color: #9a53fc;
   text-decoration: none;
   -o-transition:.4s;
   -ms-transition:.4s;
@@ -47,6 +47,17 @@ h1,h2,h3,h4,h5,h6 {
   font-family: 'Sancreek', cursive;
 }
 
+/* Text Size */
+.txt-size-xxxl { font-size: 2.8em; }
+.txt-size-xxl { font-size: 2.4em; }
+.txt-size-xl { font-size: 1.8em; }
+.txt-size-lg { font-size: 1.6em; }
+.txt-size-md { font-size: 1.4em; }
+.txt-size-sm { font-size: 1em; }
+.txt-size-caption { font-size: 1.4em; }
+
+/* ------- Container ------- */
+
 /* Container */
 /* If Width Larger than 1366px */
 @media only screen and (min-width: 1367px) {
@@ -55,15 +66,17 @@ h1,h2,h3,h4,h5,h6 {
   }
 }
 
+/* Inner Container */
 .inner-container {
   height: 100%;
   padding: 1.2em;
   background-color: #fff;
- /* -webkit-box-shadow: 2px 3px 8px 0px rgba(0,0,0,0.10);
+ /*-webkit-box-shadow: 2px 3px 8px 0px rgba(0,0,0,0.10);
   -moz-box-shadow: 2px 3px 8px 0px rgba(0,0,0,0.10);
   box-shadow: 2px 3px 8px 0px rgba(0,0,0,0.10);*/
 }
 
+/* ------- Section ------- */
 section {
   margin-bottom: 3em;
 }
@@ -87,6 +100,7 @@ section:first-of-type {
   padding: 0;
 }
 
+/* ------- Header ------- */
 #layout-header {
   /*opacity: 0;  Velocity JS Fade I */
   /*margin-bottom: 3em;*/
@@ -97,6 +111,7 @@ section:first-of-type {
   box-shadow: 0px 2px 8px 0px rgba(0,0,0,0.15);*/
 }
 
+/* Logo */
 .logo {
   font-size: 2.8em;
   color: #9a53fc;
@@ -116,6 +131,7 @@ a.logo:hover {
   color: ##ffdf5e;
 }
 
+/* Navigation */
 .navbar {
   padding: 0 !important; /*bootstrap override*/
   background-color: #2ac0df;
@@ -172,7 +188,9 @@ a.logo:hover {
   color: #ffffff;
 }
 
-/* Layout Content */
+
+/* ------- Content ------- */
+
 #layout-content {
   padding-top: 3em;
   color: #9c52ff;
@@ -203,18 +221,8 @@ a.logo:hover {
   padding: 1.4em;
 }
 
-/* Text Size */
-.txt-size-xxxl { font-size: 2.8em; }
-.txt-size-xxl { font-size: 2.4em; }
-.txt-size-xl { font-size: 1.8em; }
-.txt-size-lg { font-size: 1.6em; }
-.txt-size-md { font-size: 1.4em; }
-.txt-size-sm { font-size: 1em; }
 
-.txt-size-caption { font-size: 1.4em; }
-
-
-/* Slideshow */
+/* ------- Slideshow ------- */
 .lSSlideWrapper{
   -webkit-box-shadow: 2px 3px 8px 0px rgba(0,0,0,0.10);
   -moz-box-shadow: 2px 3px 8px 0px rgba(0,0,0,0.10);
@@ -249,6 +257,8 @@ a.logo:hover {
   background-color: #9a53fc !important;
 }
 
+
+/* ------- Pages ------- */
 
 /* Home */
 
@@ -289,6 +299,7 @@ a.logo:hover {
 
 
 /* Gallery */
+
 #gallery {
   z-index: 1000;
   /*display: flex;
@@ -408,48 +419,6 @@ a.logo:hover {
   }
 }
 
-/*
-.description {
-  color: #fff;
-}*/
-/* If Width Larger than 414px 
-@media only screen and (min-width: 415px) {
-  .description {
-    margin-bottom: 1.1em;
-  }
-}*/
-/* If Width Smaller or Equal to 414px 
-@media only screen and (max-width: 414px) {
-  .description {
-    margin-bottom: 1.6em;
-  }
-}*/
-
-/*
-ul.tags {
-  margin: 0 0 0.6em 0;
-  padding: 0;
-}
-ul.tags li {
-  display: inline-block;
-  margin: 0 0.6em 0.6em 0;
-  list-style-type: none;
-}
-ul.tags li:last-child {
-  margin: 0 0 0.6em 0;
-}
-ul.tags li a {
-  padding: 0.2em 0.5em;
-  border-radius: 0.2em;
-  font-size: 0.9em;
-  color: #fff;
-  background: #4c515c;
-}
-ul.tags li a:hover {
-  color: #fff;
-  background: #006bff;
-}*/
-
 ul.details {
   padding: 0;
 }
@@ -484,53 +453,8 @@ ul.details li:last-child {
   }
 }
 
-.copyright {
-  padding: 0 1em;
-  font-size: 1.2em;
-}
-/* If Width Larger than 414px */
-@media only screen and (min-width: 415px) {
-  .copyright {
-    text-align: left;
-  }
-}
-/* If Width Smaller or Equal to 1199px */
-@media only screen and (max-width: 1199px) { 
-  .copyright {
-    margin: 0 0 2em 0;
-    text-align: center;
-  }
-}
 
-
-.back-to-top {
-  padding: 0 1em;
-  font-size: 1.2em;
-}
-/* If Width Larger than 414px */
-@media only screen and (min-width: 415px) {
-  .back-to-top {
-    text-align: right;
-  }
-}
-/* If Width Smaller or Equal to 1199px */
-@media only screen and (max-width: 1199px) { 
-  .back-to-top {
-    text-align: center;
-  }
-}
-
-
-#layout-footer {
-  /*opacity: 0;  Velocity JS Fade I */
-  flex: 1 auto;
-  margin: 3em 0 0 0;
-  padding: 2.8em 0 6em 0;
-  background: #fff;
-  color: #2ac0df;
-}
-
-/* Gallery Modal */
+/* Gallery Featherlight Modal */
 .featherlight-inner img {
   width: 100%;
   max-height: 80vh;
@@ -572,6 +496,56 @@ ul.details li:last-child {
       margin: 0 0 1em 0;
     }
 }
+
+/* Copyright */
+.copyright {
+  padding: 0 1em;
+  font-size: 1.2em;
+}
+/* If Width Larger than 414px */
+@media only screen and (min-width: 415px) {
+  .copyright {
+    text-align: left;
+  }
+}
+/* If Width Smaller or Equal to 1199px */
+@media only screen and (max-width: 1199px) { 
+  .copyright {
+    margin: 0 0 2em 0;
+    text-align: center;
+  }
+}
+
+/* Back to Top */
+.back-to-top {
+  padding: 0 1em;
+  font-size: 1.2em;
+}
+/* If Width Larger than 414px */
+@media only screen and (min-width: 415px) {
+  .back-to-top {
+    text-align: right;
+  }
+}
+/* If Width Smaller or Equal to 1199px */
+@media only screen and (max-width: 1199px) { 
+  .back-to-top {
+    text-align: center;
+  }
+}
+
+
+/* ------- Footer ------- */
+#layout-footer {
+  /*opacity: 0;  Velocity JS Fade I */
+  flex: 1 auto;
+  margin: 3em 0 0 0;
+  padding: 2.8em 0 6em 0;
+  background: #fff;
+  color: #2ac0df;
+}
+
+
 
 /* Clipboard.js */
 .clipboard-title {
