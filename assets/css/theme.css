@@ -201,13 +201,12 @@ a.logo:hover {
   padding-bottom: 0.7em;
 }
 .nav-link {
-  color: #ffffff;
+  color: #fff;
 }
-.nav-link:hover {
-  color: #ffffff;
-}
-.nav-link:focus {
-  color: #ffffff;
+.nav-link:hover, 
+.nav-link:focus, 
+.nav-link:visited {
+  color: #fff;
 }
 
 
