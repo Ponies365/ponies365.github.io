@@ -282,14 +282,7 @@ a.logo:hover {
 /* If Width Smaller or Equal to 810px */
 @media only screen and (max-width: 810px) { 
   .mission-statement img {
-    max-width: 500px;
-    height: auto;
-  }
-}
-/* If Width Smaller or Equal to 1199px */
-@media only screen and (max-width: 360px) { 
-  .mission-statement img {
-    max-width: 290px;
+    max-width: 100%;
     height: auto;
   }
 }
@@ -501,13 +494,14 @@ ul.details li:last-child {
     text-align: left;
   }
 }
-/* If Width Smaller or Equal to 414px */
-@media only screen and (max-width: 414px) {
+/* If Width Smaller or Equal to 1199px */
+@media only screen and (max-width: 1199px) { 
   .copyright {
     margin: 0 0 2em 0;
     text-align: center;
   }
 }
+
 
 .back-to-top {
   padding: 0 1em;
@@ -519,12 +513,13 @@ ul.details li:last-child {
     text-align: right;
   }
 }
-/* If Width Smaller or Equal to 414px */
-@media only screen and (max-width: 414px) {
+/* If Width Smaller or Equal to 1199px */
+@media only screen and (max-width: 1199px) { 
   .back-to-top {
     text-align: center;
   }
 }
+
 
 #layout-footer {
   /*opacity: 0;  Velocity JS Fade I */
@@ -650,6 +645,15 @@ img.clippy {
 
 
 /* Sharing Buttons */
+
+/* If Width Smaller or Equal to 1199px */
+@media only screen and (max-width: 1199px) { 
+  .sharing-buttons {
+    margin: 0 0 2em 0;
+    text-align: center;
+  }
+}
+
 .resp-sharing-button__link,
 .resp-sharing-button__icon {
   display: inline-block
