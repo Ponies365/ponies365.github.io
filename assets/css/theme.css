@@ -30,8 +30,7 @@ body {
   background-position: center top;*/
 }
 
-a,
-a:visited {
+a {
     color: #e8663e;
     text-decoration: none;
     -o-transition: .4s;
