@@ -257,6 +257,28 @@ a.logo:hover {
 }
 
 
+/* If Width Larger than 428px */
+
+@media only screen and (min-width: 429px) {
+    .navbar-brand {
+        margin-right: 2rem !important;
+        /*bootstrap override*/
+    }
+}
+
+
+/* If Width Smaller or Equal to 428px */
+
+@media only screen and (max-width: 428px) {
+    .navbar-brand {
+        margin-right: 0 !important;
+        /*bootstrap override*/
+        text-align: center;
+        width: 100%;
+    }
+}
+
+
 /* ----- Navigation ----- */
 
 
@@ -272,33 +294,11 @@ a.logo:hover {
 }
 
 
-/* If Width Smaller or Equal to 414px */
+/* If Width Smaller or Equal to 428px */
 
-@media only screen and (max-width: 414px) {
+@media only screen and (max-width: 428px) {
     .navbar {
         justify-content: center;
-    }
-}
-
-
-/* If Width Larger than 414px */
-
-@media only screen and (min-width: 415px) {
-    .navbar-brand {
-        margin-right: 2rem !important;
-        /*bootstrap override*/
-    }
-}
-
-
-/* If Width Smaller or Equal to 414px */
-
-@media only screen and (max-width: 414px) {
-    .navbar-brand {
-        margin-right: 0 !important;
-        /*bootstrap override*/
-        text-align: center;
-        width: 100%;
     }
 }
 
@@ -377,9 +377,9 @@ a.logo:hover {
 }
 
 
-/* If Width Smaller or Equal to 414px */
+/* If Width Smaller or Equal to 428px */
 
-@media only screen and (max-width: 414px) {
+@media only screen and (max-width: 428px) {
     .page-title {
         text-align: center;
     }
@@ -535,9 +535,9 @@ a.logo:hover {
 }
 
 
-/* If Width Larger than 414px */
+/* If Width Larger than 428px */
 
-@media only screen and (min-width: 415px) {
+@media only screen and (min-width: 429px) {
     #gallery .grid-item/*> div*/
     {
         flex-direction: row;
@@ -547,9 +547,9 @@ a.logo:hover {
 }
 
 
-/* If Width Smaller or Equal to 414px */
+/* If Width Smaller or Equal to 428px */
 
-@media only screen and (max-width: 414px) {
+@media only screen and (max-width: 428px) {
     #gallery .grid-item/*> div*/
     {
         flex-direction: column;
@@ -588,18 +588,18 @@ a.logo:hover {
 }
 
 
-/* If Width Larger than 414px */
+/* If Width Larger than 428px */
 
-@media only screen and (min-width: 415px) {
+@media only screen and (min-width: 429px) {
     .grid-item a.title h2 {
         font-size: 1.8rem;
     }
 }
 
 
-/* If Width Smaller or Equal to 414px */
+/* If Width Smaller or Equal to 428px */
 
-@media only screen and (max-width: 414px) {
+@media only screen and (max-width: 428px) {
     .grid-item a.title h2 {
         font-size: 2.2rem;
     }
@@ -618,9 +618,9 @@ ul.details li:last-child {
 }
 
 
-/* If Width Larger than 414px */
+/* If Width Larger than 428px */
 
-@media only screen and (min-width: 415px) {
+@media only screen and (min-width: 429px) {
     ul.details {
         margin: 0 0 0.4rem 0;
     }
@@ -633,9 +633,9 @@ ul.details li:last-child {
 }
 
 
-/* If Width Smaller or Equal to 414px */
+/* If Width Smaller or Equal to 428px */
 
-@media only screen and (max-width: 414px) {
+@media only screen and (max-width: 428px) {
     ul.details {
         margin: 0;
     }
@@ -683,7 +683,7 @@ ul.details li:last-child {
 }
 
 
-/* If Height Smaller than 720px */
+/* If Width Smaller or Equal to 720px */
 
 @media only screen and (max-height: 720px) {
     .featherlight-content .share {
@@ -693,9 +693,9 @@ ul.details li:last-child {
 }
 
 
-/* If Width Smaller than 480px */
+/* If Width Smaller or Equal to 428px */
 
-@media only screen and (max-width: 480px) {
+@media only screen and (max-width: 428px) {
     .featherlight-content .share {
         display: block !important;
         margin: 0 0 1rem 0;
@@ -711,9 +711,9 @@ ul.details li:last-child {
 }
 
 
-/* If Width Larger than 414px */
+/* If Width Larger than 428px */
 
-@media only screen and (min-width: 415px) {
+@media only screen and (min-width: 429px) {
     .copyright {
         text-align: left;
     }
@@ -738,9 +738,9 @@ ul.details li:last-child {
 }
 
 
-/* If Width Larger than 414px */
+/* If Width Larger than 428px */
 
-@media only screen and (min-width: 415px) {
+@media only screen and (min-width: 429px) {
     .back-to-top {
         text-align: right;
     }
