@@ -772,7 +772,7 @@ ul.details li:last-child {
 #layout-footer {
     /*opacity: 0;  Velocity JS Fade I */
     flex: 1 auto;
-    margin: 3rem 0 0 0;
+    /*margin: 3rem 0 0 0;*/
     padding: 2.6rem 0 6rem 0;
     background: #fff;
     color: #2ac0df;
