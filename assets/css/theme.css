@@ -501,85 +501,27 @@ a.logo:hover {
 
 /* Gallery */
 
-#gallery {
-    box-sizing: border-box;
-    -moz-box-sizing: border-box;
-    -webkit-box-sizing: border-box;
+.gallery {
     z-index: 1000;
-    margin: 1rem 3rem;
+    margin: 1rem 0;
     text-align: center;
 }
 
-
-/* If Width Larger than 1599px */
-
-@media only screen and (min-width: 1600px) {
-    .gallery .grid-item {
-        width: 18%;
-    }
+.loading-gallery {
+    font-size: 1.6rem;
 }
 
-
-/* If Width Smaller or Equal to 1599px */
-
-@media only screen and (max-width: 1599px) {
-    .gallery .grid-item {
-        width: 18%;
-    }
-}
-
-
-/* If Width Smaller or Equal to 1440px */
-
-@media only screen and (max-width: 1440px) {
-    .gallery .grid-item {
-        width: 18%;
-    }
-}
-
-
-/* If Width Smaller or Equal to 1366px */
-
-@media only screen and (max-width: 1366px) {
-    .gallery .grid-item {
-        width: 18%;
-    }
-}
-
-
-/* If Width Smaller or Equal to 1200px */
-
-@media only screen and (max-width: 1200px) {
-    .gallery .grid-item {
-        width: 23%;
-    }
-}
-
-
-/* If Width Smaller or Equal to 960px */
-
-@media only screen and (max-width: 960px) {
-    .gallery .grid-item {
-        width: 30%;
-    }
-}
-
-
-/* If Width Smaller or Equal to 810px */
-
-@media only screen and (max-width: 810px) {
-    .gallery .grid-item {
-        width: 30%;
-    }
-}
-
-
-/* If Width Smaller or Equal to 640px */
-
-@media only screen and (max-width: 640px) {
-    .gallery .grid-item {
-        width: 47%;
-    }
+.gallery .grid-item {
+    margin: 0 0 32px 0;
+    padding: 1rem;
+    background: white;
+    -webkit-box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.10);
+    -moz-box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.10);
+    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.10);
+    -webkit-transition: all 0.4s;
+    -moz-transition: all 0.4s;
+    -o-transition: all 0.4s;
+    transition: all 0.4s;
 }
 
 
@@ -591,53 +533,67 @@ a.logo:hover {
     }
 }
 
-#loading-gallery {
-    font-size: 1.6rem;
-}
 
-#gallery .grid-item
-/*> div*/
+/* Small devices (landscape phones, 576px and up) */
 
-{
-    /*display: flex;*/
-    box-sizing: border-box;
-    -moz-box-sizing: border-box;
-    -webkit-box-sizing: border-box;
-    /*margin: 0 0 2em 0;*/
-    margin-bottom: 2em;
-    padding: 1em 1em 0.8em 1em;
-    background: #fff;
-    -webkit-box-shadow: 2px 3px 8px 0px rgba(0, 0, 0, 0.10);
-    -moz-box-shadow: 2px 3px 8px 0px rgba(0, 0, 0, 0.10);
-    box-shadow: 2px 3px 8px 0px rgba(0, 0, 0, 0.10);
-}
-
-
-/* If Width Larger than 428px */
-
-@media only screen and (min-width: 429px) {
-    #gallery .grid-item/*> div*/
-    {
-        flex-direction: row;
-        /*padding: 1.4em 2.2em;*/
-        /*max-width: 300px;*/
+@media (min-width: 576px) {
+    .gallery .grid-item {
+        width: calc(50% - 22px);
     }
 }
 
 
-/* If Width Smaller or Equal to 428px */
+/* Medium devices (tablets, 768px and up) */
 
-@media only screen and (max-width: 428px) {
-    #gallery .grid-item/*> div*/
-    {
-        flex-direction: column;
-        /*padding: 1.4em;*/
+@media (min-width: 768px) {
+    .gallery .grid-item {
+        width: calc(33.3% - 22px);
     }
 }
 
-#gallery .thumb {
-    /*width: 290px;
-    height: auto;*/
+
+/* Large devices (desktops, 992px and up) */
+
+@media (min-width: 992px) {
+    .gallery .grid-item {
+        width: calc(33.3% - 22px);
+    }
+}
+
+
+/* X-Large devices (large desktops, 1200px and up) */
+
+@media (min-width: 1200px) {
+    .gallery .grid-item {
+        width: calc(20% - 26px);
+    }
+}
+
+
+/* XX-Large devices (larger desktops, 1400px and up) */
+
+@media (min-width: 1400px) {
+    .gallery .grid-item {
+        width: calc(20% - 26px);
+    }
+}
+
+
+/* XX-Large devices (larger desktops, 1600px and up) */
+
+@media (min-width: 1600px) {
+    .gallery .grid-item {
+        width: calc(20% - 26px);
+    }
+}
+
+.gallery .grid-item:hover {
+    -webkit-box-shadow: 0px 0px 10px 0px rgba(255, 255, 255, 0.5);
+    -moz-box-shadow: 0px 0px 10px 0px rgba(255, 255, 255, 0.5);
+    box-shadow: 0px 0px 10px 0px rgba(255, 255, 255, 0.5);
+}
+
+.gallery .thumb {
     width: 100%;
     height: auto;
 }
