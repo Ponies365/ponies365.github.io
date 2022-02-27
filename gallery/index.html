@@ -1,5 +1,5 @@
 ﻿<!DOCTYPE html>
-<html id="top" class="gallery" lang="en">
+<html id="top" id="gallery" lang="en">
 
 <head>
     <!-- Google Analytics -->
@@ -12,7 +12,7 @@
     <meta name="description" content="Pony Visits to Your Home :: Gallery" />
     <meta name="keywords" content="Pony, Ponies, Party, Parties" />
     <meta name="author" content="Eva Traeger" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="generator" content="Ponies 365" />
     <meta name="robots" content="" />
 
@@ -131,7 +131,7 @@
 					    		Gallery
 					    	</h3>-->
 
-                        <div id="gallery" class="gallery">
+                        <div class="gallery">
                             <!-- Generated -->
                         </div>
 
@@ -240,105 +240,41 @@
     <!-- Bootstrap 5.1 -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.1.3/js/bootstrap.min.js" integrity="sha512-OvBgP9A2JBgiRad/mM36mkzXSXaJE9BEIENnVEmeZdITvwT09xnxLtT4twkCa8m/loMbPHsvPl0T8lRGVBwjlQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 
-    <!-- Gallery List -->
-    <!-- <script src="gallery/database/gallery.js" type="application/javascript"></script>-->
-
     <!-- Featherlight -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/featherlight/1.7.13/featherlight.min.js" integrity="sha512-0UbR6HN0dY8fWN9T7fF658896tsPgnbRREHCNq46J9/JSn8GonXDZmqtTc3qS879GM0zV49b9LPhdc/maKP8Kg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 
     <!-- Gallery Generator -->
     <script type="application/javascript">
-        // HTML Gallery List Generator
-        //$(window).on('load', function() { 
-
-        //$(document).ready(function() {
-        //$("#lightSlider").lightSlider(); 
-
         $(document).ready(function() {
-
-            //var base_url = window.location.origin;
-            //var host = window.location.host;
-            //var pathArray = window.location.pathname.split( '/' );
 
             var html = "";
 
             var gallery_size = 44;
 
-            //for (var i = 0; i < gallery.length; i++) {
             for (var i = 1; i < gallery_size; i++) {
-
-                //var title = gallery[i][0]; // eg. My Photos
-                //var img_id = title.replace(' ', '-') // Convert Invalid URI Characters to dash
-                //				  .replace('\'', '') // Remove apostrophes
-                //				  .replace('\.', '-')
-                //				  .replace('\,', '-')
-                //				  .replace('\;', '-')
-                //				  .replace('\`', '-')
-                //				  .replace('~', '-')
-                //				  .replace('!', '-')
-                //				  .replace('\@', '-')
-                //				  .replace('#', '-')
-                //				  .replace('$', '-')
-                //				  .replace('%', '-')
-                //				  .replace('^', '-')
-                //				  .replace('&', '-')
-                //				  .replace('\(', '-')
-                //				  .replace('\)', '-')
-                //				  .replace('\[', '-')
-                //				  .replace('\]', '-')
-                //				  .replace('\{', '-')
-                //				  .replace('\}', '-')
-                //				  .replace('_', '-')
-                //				  .replace('+', '-')
-                //				  .replace('=', '-')
-                //				  .toLowerCase(); // eg. #my-photo
-                //var image = gallery[i][1]; // eg. my_photo.jpg
 
                 html +=
                     '<div class=\"grid-item\">' +
-                    //'<a href=\"#\" data-featherlight=\"<p>Fancy DOM Lightbox!</p>\">Open some DOM in lightbox</a>' +
-                    //'<a href=\"#' + img_id + '\" class=\"' + img_id + '\" data-featherlight=\"<p>Hello World</p>\">' + 'Test' + '</a>' +
-                    //'<a href=\"#' + /*img_id +*/ '\" data-featherlight=\"' +
-                    //'<a href=\"#' + img_id + '\"' + ' class=\"' + img_id + '\"' + ' data-featherlight=\"' +
                     '<a href=\"#' + '\"' + ' class=\"' + String(i).padStart(2, '0') + '\"' + ' data-featherlight=\"' +
 
                     '<div id=&quot;' + i + '&quot;>' +
-                    //'<img src=&quot;gallery/images/' + image + '&quot; alt=&quot;' + title + '&quot;>' +
                     '<img src=&quot;../gallery/images/' + String(i).padStart(2, '0') + '.jpg' + '&quot; alt=&quot;>' +
-                    //'<div class=&quot;info&quot;>' +
-                    //'<div class=&quot;title&quot;>' + title + '</div>' +
-                    //'<div class=&quot;share&quot;></div>' +
-                    //'<!-- Clipboard -->' +
-                    //'<input id=&quot;' + img_id + '-copy&quot; class=&quot;clipboard-link&quot; value=&quot;https://www.ponies365.com/#' + img_id + '&quot;>' +
-                    //'<button class=&quot;btn-copy&quot; data-clipboard-target=&quot;#' + img_id + '-copy&quot; data-original-title=&quot;&quot;>' +
-                    //	'<img class=&quot;clippy&quot; src=&quot;assets/img/clippy.svg&quot; alt=&quot;Copy link&quot; width=&quot;13&quot;>' +
-                    //'</button>' +
-                    //'</div>' +
-                    //	'<!-- pass image id to share function -->' +
+                    // '<!-- pass image id to share function -->' +
                     '<script type=&quot;application/javascript&quot;>' +
-                    //'$(document).ready(function(){' +
-                    //	'createShare(&quot;#' + String(i).padStart(2, '0') + '&quot;);' +
-                    //'});' +
                     '<\/script>' +
                     '</div>' +
-
                     '\">' +
 
                     //'<!-- Thumbnail -->' +
                     '<div class=\"photo\">' +
-                    //'<a href=\"#' + gallery[i][0].replace(' ', '-').toLowerCase() + '\" target=\"_blank\">' + 
                     '<img class=\"thumb\" src=\"../gallery/images/thumbs/' + String(i).padStart(2, '0') + '.jpg' + '\">' +
-                    //'</a>' +
                     '</div>' +
-                    //'<div class=\"title\">' +
-                    //	title +
-                    //'</div>' +
 
                     '</a>' +
                     '</div>';
             }
 
-            document.getElementById("gallery").innerHTML = html;
+            document.getElementsByClassName('gallery')[0].innerHTML = html;
         });
         //});
     </script>
@@ -347,7 +283,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/masonry/4.2.2/masonry.pkgd.min.js" integrity="sha512-JRlcvSZAXT8+5SQQAvklXGJuxXTouyq8oIMaYERZQasB8SBDHZaUbeASsJWpk0UUrf89DP3/aefPPrlMR1h1yQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script type="application/javascript">
         // Show Loading Gallery message
-        var $loading = $('#loading-gallery');
+        var $loading = $('.loading-gallery');
         // Hide images
         var $boxes = $('.grid-item');
         $boxes.hide();
@@ -358,17 +294,17 @@
             $loading.hide(); //Hide loading message
             $boxes.fadeIn(); //Show images
 
-            var $container = $("#gallery");
+            var $container = $(".gallery");
 
             $container.imagesLoaded(function() {
                 $container.masonry({
                     itemSelector: '.grid-item',
                     columnWidth: 0,
                     gutter: 32,
-                    isFitWidth: true,
-                    isAnimated: true
-                        //transitionDuration: 0,
-                        //isAnimated: !Modernizr.csstransitions
+                    //isFitWidth: true,
+                    //isAnimated: true
+                    //transitionDuration: 0,
+                    //isAnimated: !Modernizr.csstransitions
                 });
             });
         });
